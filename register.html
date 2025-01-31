@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Register Form</title>
+</head>
+<body>
+    <div class="login-container">
+        <form class="login-form">
+            <h2>REGISTER</h2>
+            <div class="input-group">
+                <label for="full"><b>Full Name</b></label>
+                <input type="text" placeholder="Enter your full name" name="full" required>
+            </div>
+            <div class="input-group">
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter your Email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Create a password" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Confirm Password</label>
+                <input type="password" id="password" name="password" placeholder="Confirm password" required>
+            </div>
+            <button type="submit" class="login-btn">CREATE ACCOUNT</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+            <p class="extra-text">OR</p>
+            <button type="button" class="social-login google-login">
+                <img src="img/google-icon.png" alt="Google Logo" class="social-icon">
+                Continue with Google
+            </button>            
+            <button type="button" class="social-login facebook-login">
+                <img src="img/facebook.webp" alt="Facebook Logo" class="social-icon"> Continue with Facebook
+            </button>
+            <p class="extra-text">
+                Already have an account? <a href="login.html">Login</a>
+            </p>
+        </form>
+    </div>
+    </div>    
+</body>
+</html>

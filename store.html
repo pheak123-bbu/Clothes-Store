@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seffiya Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="JavaScript/script.js"></script>
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="nav-container">
+            <h1 class="logo"><i class="fas fa-tshirt"></i> Seffiya Collection</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="store.html" class="dropbtn">Store</a>
+                        <div class="dropdown-content">
+                          <a href="#new">New-Arrival</a>
+                          <a href="#main">Main Categories</a>
+                          <a href="#women">Clothes For Women</a>
+                          <a href="#men">Clothes For men</a>
+                          <a href="#kid">Clothes For kid</a>
+                        </div>
+                      </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                    <li><a href="login.html"><i class="fas fa-user"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input type="text" placeholder="Search for products...">
+        <button><i class="fas fa-search"></i></button>
+    </div>   
+    <!-- New Arrival Section -->
+    <section class="new-arrival">
+        <h1 id="new">NEW ARRIVAL</h1>
+        <div class="product-container">
+            <!-- Each Product Card with Add to Cart Button -->
+            <div class="product-card">
+                <img src="img/clothes1.jpg" alt="Black T-Shirt">
+                <div class="product-details">
+                    <p class="product-name">Black T-Shirt</p>
+                    <p class="product-price">10.99$</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Black T-Shirt', 10.99, 'img/clothes1.jpg', this)">Add to Cart</button>
+                    <input type="number" class="quantity-input" min="1" value="1">
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="img/clothes2.jpg" alt="Brown T-Shirt">
+                <div class="product-details">
+                    <p class="product-name">Brown T-Shirt</p>
+                    <p class="product-price">10$</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Brown T-Shirt', 10, 'img/clothes2.jpg', this)">Add to Cart</button>
+                    <input type="number" class="quantity-input" min="1" value="1">
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="img/clothes3.jpg" class="image3" alt="Long Jean">
+                <div class="product-details">
+                    <p class="product-name">Long Jean</p>
+                    <p class="product-price">39$</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Long Jean', 39, 'img/clothes3.jpg', this)">Add to Cart</button>
+                    <input type="number" class="quantity-input" min="1" value="1">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Main Categories Section -->
+    <section class="main-categories">
+        <h1 id="main">Main Categories</h1>
+        <hr>
+        <h2 id="women">Women Clothes</h2>
+        <div class="product-container">
+            <!-- Each Product Card with Add to Cart Button -->
+            <div class="product-card">
+                <img src="img/clothe4.jpg" alt="Regular Fitted Body Suit">
+                <div class="product-details">
+                    <p class="product-name">Regular Fitted Body Suit</p>
+                    <p class="product-price">27.59$</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Regular Fitted Body Suit', 27.59, 'img/clothe4.jpg', this)">Add to Cart</button>
+                    <input type="number" class="quantity-input" min="1" value="1">
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="img/clothe8.jpg" alt="Cropped Knitted Cardigan">
+                <div class="product-details">
+                    <p class="product-name">Cropped Knitted Cardigan</p>
+                    <p class="product-price">15.99$</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Cropped Knitted Cardigan', 15.99, 'img/clothe8.jpg', this)">Add to Cart</button>
+                    <input type="number" class="quantity-input" min="1" value="1">
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="img/clothe9.jpg"  alt="Sport Life Velvet Pants">
+                <div class="product-details">
+                    <p class="product-name">Sport Life Velvet Pants</p>
+                    <p class="product-price">40.99$</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Sport Life Velvet Pants', 40.99, 'img/clothe9.jpg', this)">Add to Cart</button>
+                    <input type="number" class="quantity-input" min="1" value="1">
+                </div>
+            </div>
+        </div>
+        <h2 id="men">Men Clothes</h2>
+        <div class="product-container">
+            <!-- Each Product Card with Add to Cart Button -->
+            <div class="product-card">
+                <img src="img/clothe5.jpg" alt="Texture Shirt">
+                <div class="product-details">
+                    <p class="product-name">Texture Shirt</p>
+                    <p class="product-price">20.59$</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Texture Shirt', 20.59, 'img/clothe5.jpg', this)">Add to Cart</button>
+                    <input type="number" class="quantity-input" min="1" value="1">
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="img/clothe6.jpg" alt="Sport Life Jacket">
+                <div class="product-details">
+                    <p class="product-name">Sport Life Jacket</p>
+                    <p class="product-price">50$</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Sport Life Jacket', 50, 'img/clothe6.jpg', this)">Add to Cart</button>
+                    <input type="number" class="quantity-input" min="1" value="1">
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="img/clothe7.jpg"  alt="Regular Fit Jeans">
+                <div class="product-details">
+                    <p class="product-name">Regular Fit Jeans</p>
+                    <p class="product-price">19.99$</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Regular Fit Jeans', 19.99, 'img/clothe7.jpg', this)">Add to Cart</button>
+                    <input type="number" class="quantity-input" min="1" value="1">
+                </div>
+            </div>
+        </div>
+        <h2 id="kid">Kid Clothes</h2>
+        <div class="product-container">
+            <!-- Each Product Card with Add to Cart Button -->
+            <div class="product-card">
+                <img src="img/clothe13.jpg" alt="Regular Polo Shirts">
+                <div class="product-details">
+                    <p class="product-name">Regular Polo Shirts</p>
+                    <p class="product-price">11$</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Regular Polo Shirt', 11, 'img/clothe13.jpg', this)">Add to Cart</button>
+                    <input type="number" class="quantity-input" min="1" value="1">
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="img/clothe11.jpg" alt="Black T-Shirt">
+                <div class="product-details">
+                    <p class="product-name">Black T-Shirt</p>
+                    <p class="product-price">15$</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Black T-Shirt', 15, 'img/clothe11.jpg', this)">Add to Cart</button>
+                    <input type="number" class="quantity-input" min="1" value="1">
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="img/clothe12.jpg" alt="Regular Shirts">
+                <div class="product-details">
+                    <p class="product-name">Regular Shirts</p>
+                    <p class="product-price">25$</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Regular Shirts', 25, 'img/clothe12.jpg', this)">Add to Cart</button>
+                    <input type="number" class="quantity-input" min="1" value="1">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>© 2025 Seffiya Collection. All rights reserved.</p>
+    </footer>
+</body>
+</html>
